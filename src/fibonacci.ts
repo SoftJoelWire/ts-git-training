@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 export const computeFibonacciNumber = (position: number  | null, isRecursive: boolean = false): number => {
+=======
+export const computeFibonacciNumber = (position: number, isRecursive: boolean = false): number => {
+    if (isRecursive) return recursiveFibonacci(position);
+
+    let i = 1;
+    let j = 1;
+>>>>>>> fb5749139b8b5796a40ee6cbc0fd27dba1f61b0d
 
     let notNullPosition = position;
     if (notNullPosition === null) {
@@ -43,6 +51,7 @@ const recursiveFibonacci = (initialPosition: number, left: number = 0, right: nu
         return recursiveFibonacci(initialPosition, right - left, left, currentPosition + 1);
     }
 }
+<<<<<<< HEAD
 
 const computeNegativeFibonacci = (position: number): number => {
     if (position >= 0) {
@@ -57,3 +66,5 @@ export const computeFibonacciArray = (start: number, endInclusive: number): numb
     const inputArray = [...Array(endInclusive - start + 1).keys()].map(i => i + start);
     return inputArray.map(x => computeFibonacciNumber(x));
 }
+=======
+>>>>>>> fb5749139b8b5796a40ee6cbc0fd27dba1f61b0d
