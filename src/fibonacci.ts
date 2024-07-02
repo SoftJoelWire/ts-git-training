@@ -4,6 +4,13 @@ export const computeFibonacciNumber = (position: number | null): number => {
         notNullPosition = 1;   
     }
 
+    if (notNullPosition === 0) {
+        return 0;
+    }
+    if (notNullPosition < 0) {
+        return computeNegativeFibonacci(position);
+    }
+
     if (notNullPosition <= 2) {
         return 1;
     }
