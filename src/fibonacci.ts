@@ -3,13 +3,6 @@ export const computeFibonacciNumber = (position: number | null): number => {
     if (notNullPosition === null) {
         notNullPosition = 1;   
     }
-    
-    if (notNullPosition === 0) {
-        return 0;
-    }
-    if (notNullPosition < 0) {
-        return computeNegativeFibonacci(notNullPosition);
-    }
 
     if (notNullPosition <= 2) {
         return 1;
