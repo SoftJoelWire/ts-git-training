@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export const computeFibonacciNumber = (position: number  | null, isRecursive: boolean = false): number => {
 
     let notNullPosition = position;
@@ -28,21 +27,6 @@ export const computeFibonacciNumber = (position: number  | null, isRecursive: bo
         const temp = smallFibonacciNumber;
         smallFibonacciNumber =  largeFibonacciNumber;
         largeFibonacciNumber += temp;
-=======
-export const computeFibonacciNumber = (position: number): number => {
-    if (position === 1 || position === 2) {
-        return 1;
-    }
-
-    let smallFibonacciNumber = 1;
-    let largeFibonacciNumber = 1;
-
-    let currentPosition = 2;
-    while (currentPosition < position) {
-        const nextFibonacciNumber = smallFibonacciNumber + largeFibonacciNumber;
-        smallFibonacciNumber = largeFibonacciNumber;
-        largeFibonacciNumber = nextFibonacciNumber;
->>>>>>> 1bc1c53 (improve variable naming and use clearer computation)
         currentPosition++;
     }
     return largeFibonacciNumber;
